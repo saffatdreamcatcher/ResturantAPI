@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Web API copy\\Web Application\\WebApplication1\\WebApplication1.csproj": {}
+    "E:\\Web API\\Web Application\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "E:\\Web API copy\\Web Application\\WebApplication1\\WebApplication1.csproj": {
+    "E:\\Web API\\Web Application\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Web API copy\\Web Application\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "E:\\Web API\\Web Application\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "E:\\Web API copy\\Web Application\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "E:\\Web API\\Web Application\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "E:\\Web API copy\\Web Application\\WebApplication1\\obj\\",
+        "outputPath": "E:\\Web API\\Web Application\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"

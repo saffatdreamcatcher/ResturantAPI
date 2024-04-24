@@ -16,7 +16,7 @@ namespace WebApplication1.Data
         public DbSet<User> Users { get; set; }
 
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)  git
         {
             base.OnModelCreating(modelBuilder);
 
