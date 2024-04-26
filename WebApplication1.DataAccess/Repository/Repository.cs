@@ -45,5 +45,7 @@ namespace DataAccess.Repository
         {
             dbSet.RemoveRange(entity);
         }
+
+       
     }
 }

@@ -1,4 +1,5 @@
-﻿using Core.DataAccess.Repository.IRepository;
+﻿using Azure.Core;
+using Core.DataAccess.Repository.IRepository;
 using Core.IRepository;
 using Core.Models;
 using Core.ViewModels;
@@ -68,30 +69,52 @@ namespace WebApplication1.Controllers
         }
 
 
-        //[HttpPost("Create")]
-        //public Task Create(CreateEmployeeRequest request)
-        //{
-        //    //Employee? employee = _unitOfWork.Employee.Get(u => u.Id == EmployeeId);
-        //    User? user = _unitOfWork.User.Get(u => u.Id == u.Id);
-        //    CreateEmployeeRequest createEmployeeRequest = new()
-        //    {
-
-        //        //Designation = request.Designation
-        //        FirstName = request.FirstName,
-        //        LastName = request.LastName
-
-
-        //    };
-        //    _unitOfWork.Employee.Add(request);
-        //    _unitOfWork.Save();
-        //    return Task.CompletedTask;
-        //}
-
-        [HttpPut("Update/{id}")]
-        public Task Update(UpdateEmployeeRequest id)
+        [HttpPost("Create")]
+        public Task Create(CreateEmployeeRequest request)
         {
+
+            User user = new User();
+            user.FirstName = request.FirstName;
+            user.MotherName = request.MotherName;
+            user.LastName = request.LastName;
+            user.FatherName = request.FatherName;
+            user.SpouseName = request.SpouseName;
+            user.NId = request.NId;
+            user.GenderName = request.GenderName;
+            user.PhoneNumber = request.PhoneNumber;
+            user.DobAddrerss = request.DobAddrerss;
+            user.Email = request.Email;
+            user.Label = "sssssss";
+            user.UserName = "hhhhhhhh";
+            user.SpouseName = "";
+            user.MiddleName = request.MiddleName;
+            Employee employee = new Employee();
+            employee.User = user;
+            employee.JoinDate = request.JoinDate;
+            employee.Email = request.Email;
+            employee.Designation = request.Designation;
+            employee.Salary = 0;
+            employee.Address = "";
+            employee.Name = "Roy";
+
+            _unitOfWork.Employee.Add(employee);
+            _unitOfWork.Save();
             return Task.CompletedTask;
         }
+
+
+        [HttpPut("Update/{id}")]
+        public Task Update(int id, UpdateEmployeeRequest request)
+        {
+
+            Employee? employee = _unitOfWork.Employee.Get(u => u.Id == id);
+            employee.Designation = request.Designation;
+            _unitOfWork.Employee.Update(employee);
+            _unitOfWork.Save(); 
+            return Task.CompletedTask;
+        }
+
+
 
         [HttpDelete("Delete/{id}")]
         public Task Delete(DeleteEmployeeRequest id)

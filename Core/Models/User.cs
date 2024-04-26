@@ -17,11 +17,11 @@
         public int NId { get; set; }
         public string? Image { get; set; }
         public string? ExistingImage { get; set; }
-        public string Facebook { get; set; }
-        public string Linkedin { get; set; }
-        public string Twitter { get; set; }
-        public string Instagram { get; set; }
-        public string Github { get; set; }
+        public string? Facebook { get; set; }
+        public string? Linkedin { get; set; }
+        public string? Twitter { get; set; }
+        public string? Instagram { get; set; }
+        public string? Github { get; set; }
 
         public int GenderId { get; set; } = 0;
         public string GenderName { get; set; }

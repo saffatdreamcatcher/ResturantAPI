@@ -6,7 +6,7 @@ namespace Core.ViewModels
     {
         public string Designation { get; set; }
         public DateTime JoinDate { get; set; }
-        public int Email { get; set; }
+        public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
@@ -14,7 +14,7 @@ namespace Core.ViewModels
         public string FatherName { get; set; }
         public string MotherName { get; set; }
         public string SpouseName { get; set; }
-        public string Dob { get; set; }
+        public string DobAddrerss { get; set; }
         public int NId { get; set; }
         public string GenderName { get; set; }
 
