@@ -94,8 +94,8 @@ namespace WebApplication1.Controllers
             employee.Email = request.Email;
             employee.Designation = request.Designation;
             employee.Salary = 0;
-            employee.Address = "";
-            employee.Name = "Roy";
+            employee.Address = "downtown abbey";
+            employee.Name = "Jason";
 
             _unitOfWork.Employee.Add(employee);
             _unitOfWork.Save();
@@ -117,8 +117,11 @@ namespace WebApplication1.Controllers
 
 
         [HttpDelete("Delete/{id}")]
-        public Task Delete(DeleteEmployeeRequest id)
+        public Task Delete(int id, DeleteEmployeeRequest request)
         {
+            Employee? employee = _unitOfWork.Employee.Get(u => u.Id == id);
+            _unitOfWork.Employee.Remove(employee);
+            _unitOfWork.Save();
             return Task.CompletedTask;
         }
     }
