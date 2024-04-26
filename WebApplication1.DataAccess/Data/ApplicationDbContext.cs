@@ -12,10 +12,13 @@ namespace DatAccess.Data
         }
 
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<EmployeeTable> EmployeeTables { get; set; }
+        public DbSet<Table> Tables { get; set; }
         public DbSet<User> Users { get; set; }
 
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)  
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
@@ -30,7 +33,7 @@ namespace DatAccess.Data
                     Salary = 3000,
                     Designation = "Manager",
                     UserId = 4
-                    
+
                 },
 
                 new Employee
@@ -46,6 +49,41 @@ namespace DatAccess.Data
                 }
     );
 
+            modelBuilder.Entity<Table>().HasData(
+           new Table
+           {
+               Id = 1,
+               TableNumber = "Table01",
+               NumberOfSeats = 4,
+               
+
+           },
+
+           new Table
+           {
+               Id = 2,
+               TableNumber = "Table02",
+               NumberOfSeats = 6,
+           }
+);
+
+
+            modelBuilder.Entity<EmployeeTable>().HasData(
+          new EmployeeTable
+          {
+              Id = 1,
+              EmployeeId = 2,
+              TableId = 1
+
+          },
+
+          new EmployeeTable
+          {
+              Id = 2,
+              EmployeeId = 1,
+              TableId = 2
+          }
+);
             modelBuilder.Entity<User>().HasData(
             new User
             {

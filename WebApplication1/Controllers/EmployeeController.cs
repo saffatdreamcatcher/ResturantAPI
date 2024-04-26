@@ -104,10 +104,14 @@ namespace WebApplication1.Controllers
 
 
         [HttpPut("Update/{id}")]
-        public Task Update(int id, UpdateEmployeeRequest request)
+        public  Task Update(int id, UpdateEmployeeRequest request)
         {
 
-            Employee? employee = _unitOfWork.Employee.Get(u => u.Id == id);
+            Employee? employee =   _unitOfWork.Employee.Get(u => u.Id == id);
+            if (employee == null) 
+            {
+                throw new Exception("Employee not found");
+            }
             employee.Designation = request.Designation;
             _unitOfWork.Employee.Update(employee);
             _unitOfWork.Save(); 
