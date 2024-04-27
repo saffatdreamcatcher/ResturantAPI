@@ -13,11 +13,15 @@ namespace DataAccess.Repository
     {
         private ApplicationDbContext _db;
         public IEmployeeRepository Employee { get; private set; }
+        public IEmployeeTableRepository EmployeeTable { get; private set; }
+        public ITableRepository Table { get; private set; }
         public IUserRepository User { get; private set; }
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
             Employee = new EmployeeRepository(_db);
+            EmployeeTable = new EmployeeTableRepository(_db);
+            Table = new TableRepository(_db);
             User = new UserRepository(_db);
         }
        

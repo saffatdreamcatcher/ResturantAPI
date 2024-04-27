@@ -12,10 +12,9 @@ namespace WebApplication1.Controllers
     public class EmployeeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
-        //private readonly IUserRepository _userRepo;
 
 
-        public int EmployeeId { get; private set; }
+        //public int EmployeeId { get; private set; }
 
         public EmployeeController(IUnitOfWork unitOfWork)
         {

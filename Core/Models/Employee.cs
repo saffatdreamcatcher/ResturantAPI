@@ -17,5 +17,6 @@ namespace Core.Models
         public int UserId { get; set; }
         [ForeignKey("UserId")]
         public User User { get; set; }
+        public virtual ICollection<EmployeeTable> EmployeeTables { get; set; }
     }
 }
