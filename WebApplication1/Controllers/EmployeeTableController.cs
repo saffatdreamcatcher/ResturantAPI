@@ -35,7 +35,7 @@ namespace WebApplication1.Controllers
             GetEmployeeTableRequest request = new GetEmployeeTableRequest();
             request.Id = Id; 
             request.EmployeeId = employeeTable.EmployeeId;
-            request.TableId = employeeTable.TableId; 
+            request.TableId = employeeTable.Id; 
             return request;
 
         }
