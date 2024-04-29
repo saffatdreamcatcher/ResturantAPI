@@ -17,14 +17,10 @@ namespace WebApplication1.Controllers
         [HttpGet("Get")]
         public IEnumerable<GetEmployeeTableRequest> Get()
         {
-            List<Employee> employees = _unitOfWork.Employee.GetAll().ToList();
             List<EmployeeTable> employeeTables = _unitOfWork.EmployeeTable.GetAll().ToList();
-            List<Table> tables = _unitOfWork.Table.GetAll().ToList();
             List<GetEmployeeTableRequest> employeeTableRequests = employeeTables.Select(u => new GetEmployeeTableRequest()
             {
-                EmployeeTableId = u.Id,
-                TableId = u.TableId,
-                EmployeeId = u.Id
+                Id = u.Id
             }).ToList();
 
             return employeeTableRequests;

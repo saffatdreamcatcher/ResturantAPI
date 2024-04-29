@@ -8,10 +8,9 @@ namespace Core.ViewModels
 {
     public class GetEmployeeTableRequest
     {
-        public int EmployeeTableId { get; set; }
-        public int EmployeeId { get; set; }
-        public string Name { get; set; }
-        public int TableId { get; set; }
-        public string TableNumber { get; set; }
+        public int Id { get; set; }
+        public EmployeeOptionResource Employee { get; set; }
+        public TableOptionResource Table { get; set; }
+        
     }
 }
