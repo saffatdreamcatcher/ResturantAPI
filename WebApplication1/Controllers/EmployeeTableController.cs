@@ -69,7 +69,7 @@ namespace WebApplication1.Controllers
         [HttpDelete("Delete/{id}")]
         public Task Delete(int id, DeleteEmployeeRequest request)
         {
-            EmployeeTable employeeTable = _unitOfWork.EmployeeTable.Get(u => u.Id == id);
+            EmployeeTable employeeTable = _unitOfWork.EmployeeTable.Get(u => u.Id == id); 
             _unitOfWork.EmployeeTable.Remove(employeeTable);
             _unitOfWork.Save();
             return Task.CompletedTask;

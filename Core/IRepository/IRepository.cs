@@ -8,6 +8,7 @@ namespace Core.Repository.IRepository
         IEnumerable<T> GetAll();
         T Get(Expression<Func<T, bool>> filter);
         void Add(T entity);
+        void AddRange(IEnumerable<T> entities);
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entity);
         

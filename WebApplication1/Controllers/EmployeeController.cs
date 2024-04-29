@@ -22,6 +22,21 @@ namespace WebApplication1.Controllers
 
         }
 
+        [HttpGet("datatable")]
+        public IEnumerable<GetAllEmployee> GetAll()
+        {
+            List<Employee> employees = _unitOfWork.Employee.GetAll().ToList();
+            List<GetAllEmployee> allEmployees = employees.Select(u => new GetAllEmployee()
+            {
+                Id = u.Id,
+                Designation = u.Designation,
+                JoinDate =u.JoinDate.ToString(),
+                AmountSold = (Decimal) u.AmountSold
+                
+            }).ToList();
+            return allEmployees;
+        }
+
 
         [HttpGet("Get")]
         public IEnumerable<GetEmployeeRequest> Get()
@@ -34,6 +49,18 @@ namespace WebApplication1.Controllers
             }).ToList();
 
             return employeeRequests;
+        }
+
+        [HttpGet("non-assigned-employees/{TableId}")]
+        public EmployeeOptionResource NonAssigned(int TableId)
+        {
+
+            Employee employee = _unitOfWork.Employee.Get(u => u.Id == TableId);
+            EmployeeOptionResource employeeOptionResource = new EmployeeOptionResource();
+            employeeOptionResource.EmployeeId = employee.Id;
+            employeeOptionResource.Name = employee.Name;
+            return employeeOptionResource;
+
         }
 
 
@@ -60,12 +87,6 @@ namespace WebApplication1.Controllers
         }
 
 
-
-        [HttpGet("non-assigned-employees/{tableId}")]
-        public IEnumerable<NonAssignedEmployee> NonAssignedEmployees(int tableId)
-        {
-            return Enumerable.Empty<NonAssignedEmployee>();
-        }
 
 
         [HttpPost("Create")]
@@ -125,6 +146,10 @@ namespace WebApplication1.Controllers
         public Task Delete(int id, DeleteEmployeeRequest request)
         {
             Employee? employee = _unitOfWork.Employee.Get(u => u.Id == id);
+            if (employee == null)
+            {
+                throw new Exception("Employee not found");
+            }
             _unitOfWork.Employee.Remove(employee);
             _unitOfWork.Save();
             return Task.CompletedTask;
