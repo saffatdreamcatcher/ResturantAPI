@@ -38,5 +38,42 @@ namespace WebApplication1.Controllers
             return request;
 
         }
+
+        [HttpPost("Create")]
+        public Task Create(CUTableRequest request)
+        {
+
+            Table table = new Table();
+            table.TableNumber = request.TableNumber;
+            table.NumberOfSeats = request.NumberOfSeats;
+            table.Image = request.Image;
+            _unitOfWork.Table.Add(table);
+            _unitOfWork.Save();
+            return Task.CompletedTask;
+        }
+
+        [HttpPut("Update/{id}")]
+        public Task Update(int id, CUTableRequest request)
+        {
+
+            Table table = _unitOfWork.Table.Get(u => u.Id == id);
+            table.TableNumber = request.TableNumber;
+            table.NumberOfSeats = request.NumberOfSeats;
+            table.Image = request.Image;
+            _unitOfWork.Table.Update(table);
+            _unitOfWork.Save();
+            return Task.CompletedTask;
+        }
+
+        [HttpDelete("Delete/{id}")]
+        public Task Delete(int id, DeleteTableRequest request)
+        {
+            Table table = _unitOfWork.Table.Get(u => u.Id == id);
+            _unitOfWork.Table.Remove(table);
+            _unitOfWork.Save();
+            return Task.CompletedTask;
+        }
+
+
     }
 }

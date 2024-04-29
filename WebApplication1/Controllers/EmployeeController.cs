@@ -116,8 +116,8 @@ namespace WebApplication1.Controllers
             employee.Email = request.Email;
             employee.Designation = request.Designation;
             employee.Salary = 0;
-            employee.Address = "downtown abbey";
-            employee.Name = "Jason";
+            employee.Address = "bleak street";
+            employee.Name = "Rachel";
 
             _unitOfWork.Employee.Add(employee);
             _unitOfWork.Save();
