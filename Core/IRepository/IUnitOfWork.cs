@@ -13,6 +13,7 @@ namespace Core.IRepository
         IEmployeeTableRepository EmployeeTable { get; }
         ITableRepository Table { get; }
         IUserRepository User { get; }
+        IFoodRepository Food { get; }
         void Save();
     }
 }

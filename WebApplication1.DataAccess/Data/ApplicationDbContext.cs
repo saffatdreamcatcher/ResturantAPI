@@ -15,6 +15,7 @@ namespace DatAccess.Data
         public DbSet<EmployeeTable> EmployeeTables { get; set; }
         public DbSet<Table> Tables { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Food> Foods { get; set; }
 
 
 
@@ -134,6 +135,30 @@ namespace DatAccess.Data
                    GenderName = "Male",
                }
             );
+            modelBuilder.Entity<Food>().HasData(
+          new Food
+          {
+              Id = 1,
+              Name = "Kabab",
+              Description = "Beef with spice",
+              Price = 120,
+              Discount = 10,
+              DiscountPrice = 12,
+              DiscountType = "new yaer sale"
+
+          },
+
+          new Food
+          {
+              Id = 2,
+              Name = "Butter Chicken",
+              Description = "Chicken with veg",
+              Price = 110,
+              Discount = 10,
+              DiscountPrice = 11,
+              DiscountType = "holiday season sale"
+          }
+);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Core.DataAccess.Repository.IRepository;
 using Core.IRepository;
+using Core.Models;
 using DatAccess.Data;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ namespace DataAccess.Repository
         public IEmployeeTableRepository EmployeeTable { get; private set; }
         public ITableRepository Table { get; private set; }
         public IUserRepository User { get; private set; }
+        public IFoodRepository Food { get; private set; }
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
@@ -23,6 +25,7 @@ namespace DataAccess.Repository
             EmployeeTable = new EmployeeTableRepository(_db);
             Table = new TableRepository(_db);
             User = new UserRepository(_db);
+            Food = new FoodRepository(_db);
         }
        
 
