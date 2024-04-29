@@ -30,6 +30,18 @@ namespace WebApplication1.Controllers
             return employeeTableRequests;
         }
 
+        [HttpPost("Create")]
+        public Task Create(CreateEmployeeTableRequest request)
+        {
+            
+            EmployeeTable employeeTable = new EmployeeTable();
+            employeeTable.TableId = request.TableId;
+            employeeTable.EmployeeId = request.EmployeeId;
+            _unitOfWork.EmployeeTable.Add(employeeTable);
+            _unitOfWork.Save();
+            return Task.CompletedTask;
+        }
+
 
         [HttpPut("Update/{id}")]
         public Task Update(int id, UpdateEmployeeTableRequest request)
@@ -40,6 +52,15 @@ namespace WebApplication1.Controllers
             employeeTable.TableId = request.TableId;
             employeeTable.EmployeeId = request.EmployeeId; 
             _unitOfWork.EmployeeTable.Update(employeeTable);
+            _unitOfWork.Save();
+            return Task.CompletedTask;
+        }
+
+        [HttpDelete("Delete/{id}")]
+        public Task Delete(int id, DeleteEmployeeRequest request)
+        {
+            EmployeeTable employeeTable = _unitOfWork.EmployeeTable.Get(u => u.Id == id);
+            _unitOfWork.EmployeeTable.Remove(employeeTable);
             _unitOfWork.Save();
             return Task.CompletedTask;
         }

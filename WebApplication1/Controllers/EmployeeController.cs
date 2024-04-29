@@ -84,7 +84,9 @@ namespace WebApplication1.Controllers
             user.DobAddrerss = request.DobAddrerss;
             user.Email = request.Email;
             user.Label = "sssssss";
-            user.UserName = "hhhhhhhh";
+            user.UserName = "hhhhhhhh"; 
+
+
             user.SpouseName = "";
             user.MiddleName = request.MiddleName;
             Employee employee = new Employee();
