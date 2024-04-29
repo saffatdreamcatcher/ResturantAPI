@@ -26,5 +26,17 @@ namespace WebApplication1.Controllers
 
             return tableRequests;
         }
+
+        [HttpGet("Get/{Id}")]
+        public TableRequest Get(int Id)
+        {
+
+            Table table = _unitOfWork.Table.Get(u => u.Id == Id);
+            TableRequest request = new TableRequest();
+            request.TableId = table.Id;
+            request.TableNumber = table.TableNumber;
+            return request;
+
+        }
     }
 }

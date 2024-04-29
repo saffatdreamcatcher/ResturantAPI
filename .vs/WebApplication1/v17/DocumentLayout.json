@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{FBA2D89B-3457-449B-B409-E30B924692D9}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\tablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBA2D89B-3457-449B-B409-E30B924692D9}|WebApplication1\\WebApplication1.csproj|e:\\web api\\web application\\webapplication1\\controllers\\employeetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBA2D89B-3457-449B-B409-E30B924692D9}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\employeetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\getemployeetablerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\getemployeetablerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\getemployeerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\getemployeerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\tablerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\tablerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBA2D89B-3457-449B-B409-E30B924692D9}|WebApplication1\\WebApplication1.csproj|e:\\web api\\web application\\webapplication1\\controllers\\employeetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBA2D89B-3457-449B-B409-E30B924692D9}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\employeetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBA2D89B-3457-449B-B409-E30B924692D9}|WebApplication1\\WebApplication1.csproj|e:\\web api\\web application\\webapplication1\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\updateemployeetablerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\updateemployeetablerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\getemployeetablerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\getemployeetablerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\createemployeetablerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,14 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\updateemployeerequest .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\updateemployeerequest .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Migrations\\20240429123633_TableIdCorrectedToEmployeeTableId.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1.DataAccess\\Migrations\\20240429123633_TableIdCorrectedToEmployeeTableId.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\getemployeerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\getemployeerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\irepository\\iemployeetablerepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -121,6 +117,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\getstudentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\getstudentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FBBBC0D-DA60-4A6C-96A4-86D3131497EF}|WebApplication1.DataAccess\\DataAccess.csproj|e:\\web api\\web application\\webapplication1.dataaccess\\migrations\\20240429123633_tableidcorrectedtoemployeetableid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FBBBC0D-DA60-4A6C-96A4-86D3131497EF}|WebApplication1.DataAccess\\DataAccess.csproj|solutionrelative:webapplication1.dataaccess\\migrations\\20240429123633_tableidcorrectedtoemployeetableid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -130,27 +130,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TableRequest.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\TableRequest.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\TableRequest.cs",
@@ -169,40 +157,27 @@
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\TableController.cs",
               "ToolTip": "E:\\Web API\\Web Application\\WebApplication1\\Controllers\\TableController.cs",
               "RelativeToolTip": "WebApplication1\\Controllers\\TableController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAhAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowCIAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T12:54:53.557Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UpdateEmployeeTableRequest.cs",
-              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\UpdateEmployeeTableRequest.cs",
-              "RelativeDocumentMoniker": "Core\\ViewModels\\UpdateEmployeeTableRequest.cs",
-              "ToolTip": "E:\\Web API\\Web Application\\Core\\ViewModels\\UpdateEmployeeTableRequest.cs",
-              "RelativeToolTip": "Core\\ViewModels\\UpdateEmployeeTableRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T12:42:12.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "GetEmployeeTableRequest.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\GetEmployeeTableRequest.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\GetEmployeeTableRequest.cs",
               "ToolTip": "E:\\Web API\\Web Application\\Core\\ViewModels\\GetEmployeeTableRequest.cs",
               "RelativeToolTip": "Core\\ViewModels\\GetEmployeeTableRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T07:48:09.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "EmployeeTable.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\Models\\EmployeeTable.cs",
               "RelativeDocumentMoniker": "Core\\Models\\EmployeeTable.cs",
@@ -210,25 +185,24 @@
               "RelativeToolTip": "Core\\Models\\EmployeeTable.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:54:34.094Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T07:54:34.094Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "EmployeeTableController.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1\\Controllers\\EmployeeTableController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\EmployeeTableController.cs",
               "ToolTip": "E:\\Web API\\Web Application\\WebApplication1\\Controllers\\EmployeeTableController.cs",
               "RelativeToolTip": "WebApplication1\\Controllers\\EmployeeTableController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAADAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T07:44:58.492Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "CreateEmployeeTableRequest.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\CreateEmployeeTableRequest.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\CreateEmployeeTableRequest.cs",
@@ -236,12 +210,11 @@
               "RelativeToolTip": "Core\\ViewModels\\CreateEmployeeTableRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T09:00:41.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T09:00:41.28Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\EmployeeController.cs",
@@ -249,64 +222,11 @@
               "RelativeToolTip": "WebApplication1\\Controllers\\EmployeeController.cs",
               "ViewState": "AQIAAHIAAAAAAAAAAAAUwDkAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:44:55.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T07:44:55.7Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EmployeeTableResource.cs",
-              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\EmployeeTableResource.cs",
-              "RelativeDocumentMoniker": "Core\\ViewModels\\EmployeeTableResource.cs",
-              "ToolTip": "E:\\Web API\\Web Application\\Core\\ViewModels\\EmployeeTableResource.cs",
-              "RelativeToolTip": "Core\\ViewModels\\EmployeeTableResource.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:51:51.454Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Table.cs",
-              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\Models\\Table.cs",
-              "RelativeDocumentMoniker": "Core\\Models\\Table.cs",
-              "ToolTip": "E:\\Web API\\Web Application\\Core\\Models\\Table.cs",
-              "RelativeToolTip": "Core\\Models\\Table.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T08:52:16.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UpdateEmployeeRequest .cs",
-              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\UpdateEmployeeRequest .cs",
-              "RelativeDocumentMoniker": "Core\\ViewModels\\UpdateEmployeeRequest .cs",
-              "ToolTip": "E:\\Web API\\Web Application\\Core\\ViewModels\\UpdateEmployeeRequest .cs",
-              "RelativeToolTip": "Core\\ViewModels\\UpdateEmployeeRequest .cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T12:42:09.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "20240429123633_TableIdCorrectedToEmployeeTableId.cs",
-              "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Migrations\\20240429123633_TableIdCorrectedToEmployeeTableId.cs",
-              "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Migrations\\20240429123633_TableIdCorrectedToEmployeeTableId.cs",
-              "ToolTip": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Migrations\\20240429123633_TableIdCorrectedToEmployeeTableId.cs",
-              "RelativeToolTip": "WebApplication1.DataAccess\\Migrations\\20240429123633_TableIdCorrectedToEmployeeTableId.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T12:36:33.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "GetEmployeeRequest.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\GetEmployeeRequest.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\GetEmployeeRequest.cs",
@@ -319,7 +239,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 7,
+              "Title": "UpdateEmployeeTableRequest.cs",
+              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\UpdateEmployeeTableRequest.cs",
+              "RelativeDocumentMoniker": "Core\\ViewModels\\UpdateEmployeeTableRequest.cs",
+              "ToolTip": "E:\\Web API\\Web Application\\Core\\ViewModels\\UpdateEmployeeTableRequest.cs",
+              "RelativeToolTip": "Core\\ViewModels\\UpdateEmployeeTableRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T12:42:12.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeeTableResource.cs",
+              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\EmployeeTableResource.cs",
+              "RelativeDocumentMoniker": "Core\\ViewModels\\EmployeeTableResource.cs",
+              "ToolTip": "E:\\Web API\\Web Application\\Core\\ViewModels\\EmployeeTableResource.cs",
+              "RelativeToolTip": "Core\\ViewModels\\EmployeeTableResource.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T07:51:51.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Table.cs",
+              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\Models\\Table.cs",
+              "RelativeDocumentMoniker": "Core\\Models\\Table.cs",
+              "ToolTip": "E:\\Web API\\Web Application\\Core\\Models\\Table.cs",
+              "RelativeToolTip": "Core\\Models\\Table.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T08:52:16.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UpdateEmployeeRequest .cs",
+              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\UpdateEmployeeRequest .cs",
+              "RelativeDocumentMoniker": "Core\\ViewModels\\UpdateEmployeeRequest .cs",
+              "ToolTip": "E:\\Web API\\Web Application\\Core\\ViewModels\\UpdateEmployeeRequest .cs",
+              "RelativeToolTip": "Core\\ViewModels\\UpdateEmployeeRequest .cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T12:42:09.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20240429123633_TableIdCorrectedToEmployeeTableId.cs",
+              "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Migrations\\20240429123633_TableIdCorrectedToEmployeeTableId.cs",
+              "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Migrations\\20240429123633_TableIdCorrectedToEmployeeTableId.cs",
+              "ToolTip": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Migrations\\20240429123633_TableIdCorrectedToEmployeeTableId.cs",
+              "RelativeToolTip": "WebApplication1.DataAccess\\Migrations\\20240429123633_TableIdCorrectedToEmployeeTableId.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T12:36:33.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "IEmployeeTableRepository .cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\IEmployeeTableRepository .cs",
               "RelativeDocumentMoniker": "Core\\IRepository\\IEmployeeTableRepository .cs",
@@ -327,12 +307,11 @@
               "RelativeToolTip": "Core\\IRepository\\IEmployeeTableRepository .cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T09:20:12.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T09:20:12.403Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
@@ -340,12 +319,11 @@
               "RelativeToolTip": "WebApplication1\\Program.cs",
               "ViewState": "AQIAABkAAAAAAAAAAADgvysAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T10:37:38.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T10:37:38.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "IRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\IRepository.cs",
               "RelativeDocumentMoniker": "Core\\IRepository\\IRepository.cs",
@@ -357,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "Employee.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Core\\Models\\Employee.cs",
@@ -369,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "TableOptionResource.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\TableOptionResource.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\TableOptionResource.cs",
@@ -377,12 +355,11 @@
               "RelativeToolTip": "Core\\ViewModels\\TableOptionResource.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T12:24:31.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T12:24:31.758Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "EmployeeOptionResource.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\EmployeeOptionResource.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\EmployeeOptionResource.cs",
@@ -390,12 +367,11 @@
               "RelativeToolTip": "Core\\ViewModels\\EmployeeOptionResource.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:47:57.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T07:47:57.666Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "Repository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Repository\\Repository.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Repository\\Repository.cs",
@@ -407,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Data\\ApplicationDbContext.cs",
@@ -419,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "IEmployeeRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\IEmployeeRepository.cs",
               "RelativeDocumentMoniker": "Core\\IRepository\\IEmployeeRepository.cs",
@@ -431,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "ITableRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\ITableRepository.cs",
               "RelativeDocumentMoniker": "Core\\IRepository\\ITableRepository.cs",
@@ -443,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Core\\IRepository\\IUserRepository.cs",
@@ -455,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "Core\\IRepository\\IUnitOfWork.cs",
@@ -467,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Repository\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Repository\\UnitOfWork.cs",
@@ -479,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Repository\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Repository\\EmployeeRepository.cs",
@@ -491,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "EmployeeResource.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\EmployeeResource.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\EmployeeResource.cs",
@@ -503,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\Models\\User.cs",
               "RelativeDocumentMoniker": "Core\\Models\\User.cs",
@@ -515,7 +491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "GetStudentResponse.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\GetStudentResponse.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\GetStudentResponse.cs",
