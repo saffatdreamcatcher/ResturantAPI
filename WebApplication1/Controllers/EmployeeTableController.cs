@@ -2,6 +2,7 @@
 using Core.Models;
 using Core.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace WebApplication1.Controllers
 {
@@ -24,6 +25,19 @@ namespace WebApplication1.Controllers
             }).ToList();
 
             return employeeTableRequests;
+        }
+
+        [HttpGet("Get/{Id}")]
+        public GetEmployeeTableRequest Get(int Id)
+        {
+
+            EmployeeTable employeeTable = _unitOfWork.EmployeeTable.Get(u => u.Id == Id);
+            GetEmployeeTableRequest request = new GetEmployeeTableRequest();
+            request.Id = Id; 
+            request.EmployeeId = employeeTable.EmployeeId;
+            request.TableId = employeeTable.TableId; 
+            return request;
+
         }
 
         [HttpPost("Create")]
