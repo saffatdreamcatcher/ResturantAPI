@@ -32,10 +32,10 @@ namespace WebApplication1.Controllers
 
 
         [HttpGet("Get/{Id}")]
-        public FoodRequest Get(int Id)
+        public  FoodRequest Get(int Id)
         {
 
-            Food food = _unitOfWork.Food.Get(u => u.Id == Id);
+            Food food =  _unitOfWork.Food.Get(u => u.Id == Id);
             FoodRequest request = new FoodRequest();
             request.FoodId = food.Id;
             request.Name = food.Name;

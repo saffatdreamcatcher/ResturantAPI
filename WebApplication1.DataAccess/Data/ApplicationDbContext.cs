@@ -16,6 +16,10 @@ namespace DatAccess.Data
         public DbSet<Table> Tables { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Food> Foods { get; set; }
+        public DbSet<FoodPackage> FoodPackages { get; set; }
+        public DbSet<Package> Packages { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
 
 
 

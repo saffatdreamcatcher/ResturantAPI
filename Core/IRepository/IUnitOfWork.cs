@@ -14,6 +14,10 @@ namespace Core.IRepository
         ITableRepository Table { get; }
         IUserRepository User { get; }
         IFoodRepository Food { get; }
+        IFoodPackageRepository FoodPackage { get; }
+        IPackageRepository Package { get; }
+        IOrderRepository Order { get; }
+        IOrderItemRepository OrderItem { get; }
         void Save();
     }
 }

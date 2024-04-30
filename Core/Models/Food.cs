@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace Core.Models
         public decimal Discount { get; set; }
         public decimal DiscountPrice { get; set; }
         public string? Image { get; set; }
-
-        
+        public virtual ICollection<FoodPackage> FoodPackages { get; set; }
+        public virtual ICollection<OrderItem> OrderItems{ get; set; }
     }
 }

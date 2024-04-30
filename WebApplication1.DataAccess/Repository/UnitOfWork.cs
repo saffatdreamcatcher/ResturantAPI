@@ -18,6 +18,10 @@ namespace DataAccess.Repository
         public ITableRepository Table { get; private set; }
         public IUserRepository User { get; private set; }
         public IFoodRepository Food { get; private set; }
+        public IFoodPackageRepository FoodPackage { get; private set; }
+        public IPackageRepository Package { get; private set; }
+        public IOrderRepository Order { get; private set; }
+        public IOrderItemRepository OrderItem { get; private set; }
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
@@ -26,6 +30,11 @@ namespace DataAccess.Repository
             Table = new TableRepository(_db);
             User = new UserRepository(_db);
             Food = new FoodRepository(_db);
+            Order = new OrderRepository(_db);
+            OrderItem = new OrderItemRepository(_db);
+            FoodPackage = new FoodPackageRepository(_db);
+            Package = new PackageRepository(_db); 
+
         }
        
 

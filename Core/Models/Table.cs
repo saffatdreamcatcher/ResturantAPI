@@ -15,6 +15,7 @@ namespace Core.Models
         public string? Image { get; set; }
 
         public virtual ICollection<EmployeeTable> EmployeeTables { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
 
     }
 }
