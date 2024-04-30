@@ -78,5 +78,14 @@ namespace WebApplication1.Controllers
             _unitOfWork.Save();
             return Task.CompletedTask;
         }
+
+        [HttpDelete("Delete/{id}")]
+        public Task Delete(int id, DeleteFoodRequest request)
+        {
+            Food food = _unitOfWork.Food.Get(u => u.Id == id);
+            _unitOfWork.Food.Remove(food);
+            _unitOfWork.Save();
+            return Task.CompletedTask;
+        }
     }
 }
