@@ -1,4 +1,5 @@
 ﻿using Core.IRepository;
+using Core.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication1.Controllers
@@ -13,10 +14,11 @@ namespace WebApplication1.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        //[HttpGet("Get/{Id}")]
-        //public OrderRequest Get(int Id)
-        //{
-         
-        //}
+        [HttpGet("Get/{Id}")]
+        public void Get(int Id)
+        {
+           List<Order> orders =  _unitOfWork.Order.Get(o=> o.Id == Id);
+           List<OrderItem> orderItems = _unitOfWork.OrderItem.Get(oi=> oi.OrderId == Id);
+        }
     }
 }

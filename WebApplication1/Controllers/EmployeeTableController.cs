@@ -31,7 +31,7 @@ namespace WebApplication1.Controllers
         public GetEmployeeTableRequest Get(int Id)
         {
 
-            EmployeeTable employeeTable = _unitOfWork.EmployeeTable.Get(u => u.Id == Id);
+            EmployeeTable? employeeTable = _unitOfWork.EmployeeTable.Find(Id);
             GetEmployeeTableRequest request = new GetEmployeeTableRequest();
             request.Id = Id; 
             request.EmployeeId = employeeTable.EmployeeId;
@@ -57,8 +57,8 @@ namespace WebApplication1.Controllers
         public Task Update(int id, UpdateEmployeeTableRequest request)
         {
 
-            EmployeeTable employeeTable = _unitOfWork.EmployeeTable.Get(u => u.Id == id);
-            Employee employee = _unitOfWork.Employee.Get(u => u.Id == employeeTable.EmployeeId);
+            EmployeeTable? employeeTable = _unitOfWork.EmployeeTable.Find(id);
+            Employee? employee = _unitOfWork.Employee.Find(employeeTable.EmployeeId);
             employeeTable.TableId = request.TableId;
             employeeTable.EmployeeId = request.EmployeeId; 
             _unitOfWork.EmployeeTable.Update(employeeTable);
@@ -69,7 +69,7 @@ namespace WebApplication1.Controllers
         [HttpDelete("Delete/{id}")]
         public Task Delete(int id, DeleteEmployeeRequest request)
         {
-            EmployeeTable employeeTable = _unitOfWork.EmployeeTable.Get(u => u.Id == id); 
+            EmployeeTable? employeeTable = _unitOfWork.EmployeeTable.Find(id); 
             _unitOfWork.EmployeeTable.Remove(employeeTable);
             _unitOfWork.Save();
             return Task.CompletedTask;

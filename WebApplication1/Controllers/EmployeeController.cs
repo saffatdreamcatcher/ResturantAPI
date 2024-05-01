@@ -55,7 +55,7 @@ namespace WebApplication1.Controllers
         public EmployeeOptionResource NonAssigned(int TableId)
         {
 
-            Employee employee = _unitOfWork.Employee.Get(u => u.Id == TableId);
+            Employee? employee = _unitOfWork.Employee.Find(TableId);
             EmployeeOptionResource employeeOptionResource = new EmployeeOptionResource();
             employeeOptionResource.EmployeeId = employee.Id;
             employeeOptionResource.Name = employee.Name;
@@ -70,13 +70,13 @@ namespace WebApplication1.Controllers
         public EmployeeResource Get(int Id)
         {
 
-            Employee? employee = _unitOfWork.Employee.Get(u => u.Id == Id);
+            Employee? employee = _unitOfWork.Employee.Find(Id);
             EmployeeResource employeeResource = new EmployeeResource();
             employeeResource.Id = Id;
             employeeResource.JoinDate = employee.JoinDate != null ? (DateTime)employee.JoinDate : DateTime.MinValue;
             employeeResource.Designation = employee.Designation;
             employeeResource.AmountSold = employee.AmountSold;
-            User? user = _unitOfWork.User.Get(u => u.Id == employee.UserId);
+            User? user = _unitOfWork.User.Find(employee.UserId);
             UserResource userResource = new UserResource();
             userResource.FirstName = user.FirstName;
             userResource.Email = user.Email;
@@ -129,7 +129,7 @@ namespace WebApplication1.Controllers
         public  Task Update(int id, UpdateEmployeeRequest request)
         {
 
-            Employee? employee =   _unitOfWork.Employee.Get(u => u.Id == id);
+            Employee? employee =   _unitOfWork.Employee.Find(id);
             if (employee == null) 
             {
                 throw new Exception("Employee not found");
@@ -145,14 +145,14 @@ namespace WebApplication1.Controllers
         [HttpDelete("Delete/{id}")]
         public Task Delete(int id, DeleteEmployeeRequest request)
         {
-            Employee? employee = _unitOfWork.Employee.Get(u => u.Id == id);
+            Employee? employee = _unitOfWork.Employee.Find(id);
             if (employee == null)
             {
                 throw new Exception("Employee not found");
             }
             _unitOfWork.Employee.Remove(employee);
             _unitOfWork.Save();
-            return Task.CompletedTask;
+            return Task.CompletedTask; 
         }
     }
 }

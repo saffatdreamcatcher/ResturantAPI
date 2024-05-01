@@ -31,7 +31,7 @@ namespace WebApplication1.Controllers
         public TableRequest Get(int Id)
         {
 
-            Table table = _unitOfWork.Table.Get(u => u.Id == Id);
+            Table? table = _unitOfWork.Table.Find(Id);
             TableRequest request = new TableRequest();
             request.TableId = table.Id;
             request.TableNumber = table.TableNumber;
@@ -56,7 +56,7 @@ namespace WebApplication1.Controllers
         public Task Update(int id, CUTableRequest request)
         {
 
-            Table table = _unitOfWork.Table.Get(u => u.Id == id);
+            Table? table = _unitOfWork.Table.Find(id);
             table.TableNumber = request.TableNumber;
             table.NumberOfSeats = request.NumberOfSeats;
             table.Image = request.Image;
@@ -68,7 +68,7 @@ namespace WebApplication1.Controllers
         [HttpDelete("Delete/{id}")]
         public Task Delete(int id, DeleteTableRequest request)
         {
-            Table table = _unitOfWork.Table.Get(u => u.Id == id);
+            Table? table = _unitOfWork.Table.Find(id);
             _unitOfWork.Table.Remove(table);
             _unitOfWork.Save();
             return Task.CompletedTask;

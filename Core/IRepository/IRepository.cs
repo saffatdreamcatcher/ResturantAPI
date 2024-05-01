@@ -6,7 +6,8 @@ namespace Core.Repository.IRepository
     {
         // T - Employee 
         IEnumerable<T> GetAll();
-        T  Get(Expression<Func<T, bool>> filter);
+        List<T>  Get(Expression<Func<T, bool>> filter);
+        T? Find(int Id);
         void Add(T entity);
         void AddRange(IEnumerable<T> entities);
         void Remove(T entity);

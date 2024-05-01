@@ -26,14 +26,20 @@ namespace DataAccess.Repository
         {
             dbSet.AddRange(entities);
         }
-            
 
-        public T Get(Expression<Func<T, bool>> filter)
+        public T? Find(int Id)
+        {
+            return dbSet.Find(Id);
+        }
+
+        public List<T> Get(Expression<Func<T, bool>> filter)
         {
             IQueryable<T> query = dbSet;
             query = query.Where(filter);
-            return query.FirstOrDefault();
+            return query.ToList();
         }
+
+        
 
         public IEnumerable<T> GetAll()
         {

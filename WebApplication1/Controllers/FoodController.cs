@@ -35,7 +35,7 @@ namespace WebApplication1.Controllers
         public  FoodRequest Get(int Id)
         {
 
-            Food food =  _unitOfWork.Food.Get(u => u.Id == Id);
+            Food food =  _unitOfWork.Food.Find(Id);
             FoodRequest request = new FoodRequest();
             request.FoodId = food.Id;
             request.Name = food.Name;
@@ -66,7 +66,7 @@ namespace WebApplication1.Controllers
         public Task Update(int id, CUFoodRequest request)
         {
 
-            Food food = _unitOfWork.Food.Get(u => u.Id == id);
+            Food food = _unitOfWork.Food.Find(id);
             food.Name = request.Name;
             food.Description = request.Description;
             food.Price = request.Price;
@@ -82,7 +82,7 @@ namespace WebApplication1.Controllers
         [HttpDelete("Delete/{id}")]
         public Task Delete(int id, DeleteFoodRequest request)
         {
-            Food food = _unitOfWork.Food.Get(u => u.Id == id);
+            Food? food = _unitOfWork.Food.Find(id);
             _unitOfWork.Food.Remove(food);
             _unitOfWork.Save();
             return Task.CompletedTask;
