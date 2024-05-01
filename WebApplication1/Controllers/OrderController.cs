@@ -15,10 +15,10 @@ namespace WebApplication1.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        [HttpGet("Get/{Id}")]
-        public OrderRequest Get(int Id)
-        {
+        //[HttpGet("Get/{Id}")]
+        //public OrderRequest Get(int Id)
+        //{
          
-        }
+        //}
     }
 }
