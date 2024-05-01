@@ -14,7 +14,7 @@ namespace Core.Models
 
         [Column(TypeName = "decimal(18,2)")]
         public decimal Amount { get; set; }
-        public DateTime OrderTime { get; set ; }
+        public DateTime OrderTime { get; set ; } = DateTime.Now;
         public int TableId { get; set; }
         public Table Table { get; set; }
         public virtual ICollection<OrderItem> OrderItems { get; set; } 
