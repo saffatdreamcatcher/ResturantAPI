@@ -17,7 +17,7 @@ namespace WebApplication1.Controllers
 
 
         [HttpPost("Create")]
-        public Task Create(CreateOrderRequest request)
+        public Task Create(CUOrderRequest request)
         {
 
             Order order = new Order();
@@ -41,10 +41,10 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPut("Update/{id}")]
-        public Task Update(int id, CreateOrderRequest request)
+        public Task Update(int id, CUOrderRequest request)
         {
 
-            Order order = _unitOfWork.Order.Find(id);
+            Order? order = _unitOfWork.Order.Find(id);
             order.TableId = request.TableId;
             order.OrderNumber = request.OrderNumber;
             order.Amount = request.Amount;
@@ -59,6 +59,15 @@ namespace WebApplication1.Controllers
             }
             _unitOfWork.OrderItem.AddRange(orderItems);
             _unitOfWork.Order.Update(order);
+            _unitOfWork.Save();
+            return Task.CompletedTask;
+        }
+
+        [HttpDelete("Delete/{id}")]
+        public Task Delete(int id, DeleteOrderRequest request)
+        {
+            Order? order = _unitOfWork.Order.Find(id);
+            _unitOfWork.Order.Remove(order);
             _unitOfWork.Save();
             return Task.CompletedTask;
         }

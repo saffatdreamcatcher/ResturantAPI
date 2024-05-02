@@ -2,7 +2,7 @@
 
 namespace Core.ViewModels
 {
-    public class CreateOrderRequest
+    public class CUOrderRequest
     {
         public int Id { get; set; } 
         public int TableId { get; set; } 

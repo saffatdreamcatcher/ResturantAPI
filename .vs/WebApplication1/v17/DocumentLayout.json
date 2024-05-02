@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "E:\\Web API\\Web Application\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FBA2D89B-3457-449B-B409-E30B924692D9}|WebApplication1\\WebApplication1.csproj|e:\\web api\\web application\\webapplication1\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBA2D89B-3457-449B-B409-E30B924692D9}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FBA2D89B-3457-449B-B409-E30B924692D9}|WebApplication1\\WebApplication1.csproj|e:\\web api\\web application\\webapplication1\\controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBA2D89B-3457-449B-B409-E30B924692D9}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\deleteorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\deleteorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\deletefoodrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\deletefoodrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\deleteemployeerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\deleteemployeerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\cuorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\cuorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBA2D89B-3457-449B-B409-E30B924692D9}|WebApplication1\\WebApplication1.csproj|e:\\web api\\web application\\webapplication1\\controllers\\employeetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\irepository\\iemployeetablerepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\irepository\\iemployeetablerepository .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBA2D89B-3457-449B-B409-E30B924692D9}|WebApplication1\\WebApplication1.csproj|e:\\web api\\web application\\webapplication1\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBA2D89B-3457-449B-B409-E30B924692D9}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FBBBC0D-DA60-4A6C-96A4-86D3131497EF}|WebApplication1.DataAccess\\DataAccess.csproj|e:\\web api\\web application\\webapplication1.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,20 +59,12 @@
       "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\orderitemresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\createorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\createorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FBA2D89B-3457-449B-B409-E30B924692D9}|WebApplication1\\WebApplication1.csproj|e:\\web api\\web application\\webapplication1\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBA2D89B-3457-449B-B409-E30B924692D9}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FBBBC0D-DA60-4A6C-96A4-86D3131497EF}|WebApplication1.DataAccess\\DataAccess.csproj|e:\\web api\\web application\\webapplication1.dataaccess\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FBBBC0D-DA60-4A6C-96A4-86D3131497EF}|WebApplication1.DataAccess\\DataAccess.csproj|solutionrelative:webapplication1.dataaccess\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FBBBC0D-DA60-4A6C-96A4-86D3131497EF}|WebApplication1.DataAccess\\DataAccess.csproj|e:\\web api\\web application\\webapplication1.dataaccess\\repository\\foodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FBBBC0D-DA60-4A6C-96A4-86D3131497EF}|WebApplication1.DataAccess\\DataAccess.csproj|solutionrelative:webapplication1.dataaccess\\repository\\foodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FBBBC0D-DA60-4A6C-96A4-86D3131497EF}|WebApplication1.DataAccess\\DataAccess.csproj|e:\\web api\\web application\\webapplication1.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -179,10 +187,6 @@
       "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\irepository\\ifoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\deletefoodrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\deletefoodrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\foodrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\foodrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -197,10 +201,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\deletetablerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\deletetablerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\deleteemployeerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|solutionrelative:core\\viewmodels\\deleteemployeerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C28A6B84-90C2-4EC3-8104-4929590FB830}|Core\\Core.csproj|e:\\web api\\web application\\core\\viewmodels\\tableresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -254,7 +254,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -274,51 +274,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "DeleteOrderRequest.cs",
+              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\DeleteOrderRequest.cs",
+              "RelativeDocumentMoniker": "Core\\ViewModels\\DeleteOrderRequest.cs",
+              "ToolTip": "E:\\Web API\\Web Application\\Core\\ViewModels\\DeleteOrderRequest.cs",
+              "RelativeToolTip": "Core\\ViewModels\\DeleteOrderRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T14:12:27.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "OrderController.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\OrderController.cs",
               "ToolTip": "E:\\Web API\\Web Application\\WebApplication1\\Controllers\\OrderController.cs",
               "RelativeToolTip": "WebApplication1\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAIwDwAAAAsAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAvwDEAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T14:08:03.728Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FoodRepository.cs",
-              "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Repository\\FoodRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Repository\\FoodRepository.cs",
-              "ToolTip": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Repository\\FoodRepository.cs",
-              "RelativeToolTip": "WebApplication1.DataAccess\\Repository\\FoodRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T14:25:00.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\EmployeeController.cs",
-              "ToolTip": "E:\\Web API\\Web Application\\WebApplication1\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\EmployeeController.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAawJoAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T07:44:55.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CreateOrderRequest.cs",
-              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\CreateOrderRequest.cs",
-              "RelativeDocumentMoniker": "Core\\ViewModels\\CreateOrderRequest.cs",
-              "ToolTip": "E:\\Web API\\Web Application\\Core\\ViewModels\\CreateOrderRequest.cs",
-              "RelativeToolTip": "Core\\ViewModels\\CreateOrderRequest.cs",
+              "DocumentIndex": 5,
+              "Title": "CUOrderRequest.cs",
+              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\CUOrderRequest.cs",
+              "RelativeDocumentMoniker": "Core\\ViewModels\\CUOrderRequest.cs",
+              "ToolTip": "E:\\Web API\\Web Application\\Core\\ViewModels\\CUOrderRequest.cs",
+              "RelativeToolTip": "Core\\ViewModels\\CUOrderRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T14:10:14.344Z",
@@ -326,59 +313,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Order.cs",
-              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "Core\\Models\\Order.cs",
-              "ToolTip": "E:\\Web API\\Web Application\\Core\\Models\\Order.cs",
-              "RelativeToolTip": "Core\\Models\\Order.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T11:24:11.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OrderItem.cs",
-              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\Models\\OrderItem.cs",
-              "RelativeDocumentMoniker": "Core\\Models\\OrderItem.cs",
-              "ToolTip": "E:\\Web API\\Web Application\\Core\\Models\\OrderItem.cs",
-              "RelativeToolTip": "Core\\Models\\OrderItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBgAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T11:26:24.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FoodController.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1\\Controllers\\FoodController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\FoodController.cs",
               "ToolTip": "E:\\Web API\\Web Application\\WebApplication1\\Controllers\\FoodController.cs",
               "RelativeToolTip": "WebApplication1\\Controllers\\FoodController.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAvwFAAAAAAAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAADgv1gAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T14:04:01.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IEmployeeTableRepository .cs",
-              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\IEmployeeTableRepository .cs",
-              "RelativeDocumentMoniker": "Core\\IRepository\\IEmployeeTableRepository .cs",
-              "ToolTip": "E:\\Web API\\Web Application\\Core\\IRepository\\IEmployeeTableRepository .cs",
-              "RelativeToolTip": "Core\\IRepository\\IEmployeeTableRepository .cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T09:20:12.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "EmployeeTableController.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1\\Controllers\\EmployeeTableController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\EmployeeTableController.cs",
@@ -391,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Repository\\OrderRepository.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Repository\\OrderRepository.cs",
@@ -404,7 +352,85 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeleteFoodRequest.cs",
+              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\DeleteFoodRequest.cs",
+              "RelativeDocumentMoniker": "Core\\ViewModels\\DeleteFoodRequest.cs",
+              "ToolTip": "E:\\Web API\\Web Application\\Core\\ViewModels\\DeleteFoodRequest.cs",
+              "RelativeToolTip": "Core\\ViewModels\\DeleteFoodRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T06:12:26.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "DeleteEmployeeRequest.cs",
+              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\DeleteEmployeeRequest.cs",
+              "RelativeDocumentMoniker": "Core\\ViewModels\\DeleteEmployeeRequest.cs",
+              "ToolTip": "E:\\Web API\\Web Application\\Core\\ViewModels\\DeleteEmployeeRequest.cs",
+              "RelativeToolTip": "Core\\ViewModels\\DeleteEmployeeRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T13:26:30.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IEmployeeTableRepository .cs",
+              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\IEmployeeTableRepository .cs",
+              "RelativeDocumentMoniker": "Core\\IRepository\\IEmployeeTableRepository .cs",
+              "ToolTip": "E:\\Web API\\Web Application\\Core\\IRepository\\IEmployeeTableRepository .cs",
+              "RelativeToolTip": "Core\\IRepository\\IEmployeeTableRepository .cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T09:20:12.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Core\\Models\\OrderItem.cs",
+              "ToolTip": "E:\\Web API\\Web Application\\Core\\Models\\OrderItem.cs",
+              "RelativeToolTip": "Core\\Models\\OrderItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T11:26:24.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Order.cs",
+              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Core\\Models\\Order.cs",
+              "ToolTip": "E:\\Web API\\Web Application\\Core\\Models\\Order.cs",
+              "RelativeToolTip": "Core\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T11:24:11.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\EmployeeController.cs",
+              "ToolTip": "E:\\Web API\\Web Application\\WebApplication1\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAawJoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T07:44:55.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Repository\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Repository\\UnitOfWork.cs",
@@ -417,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "Core\\IRepository\\IUnitOfWork.cs",
@@ -430,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "20240502124239_OrderIdPropertyAddedToOrder.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Migrations\\20240502124239_OrderIdPropertyAddedToOrder.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Migrations\\20240502124239_OrderIdPropertyAddedToOrder.cs",
@@ -443,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "OrderItemResource.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\OrderItemResource.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\OrderItemResource.cs",
@@ -456,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Data\\ApplicationDbContext.cs",
@@ -469,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "CreateEmployeeRequest .cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\CreateEmployeeRequest .cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\CreateEmployeeRequest .cs",
@@ -482,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "EmployeeTable.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\Models\\EmployeeTable.cs",
               "RelativeDocumentMoniker": "Core\\Models\\EmployeeTable.cs",
@@ -495,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "TableController.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1\\Controllers\\TableController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\TableController.cs",
@@ -508,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Employee.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Core\\Models\\Employee.cs",
@@ -521,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Table.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\Models\\Table.cs",
               "RelativeDocumentMoniker": "Core\\Models\\Table.cs",
@@ -534,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "20240502092834_NewPropertyAddedToOrderItem.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Migrations\\20240502092834_NewPropertyAddedToOrderItem.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Migrations\\20240502092834_NewPropertyAddedToOrderItem.cs",
@@ -547,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Repository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Repository\\Repository.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Repository\\Repository.cs",
@@ -559,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "IRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\IRepository.cs",
               "RelativeDocumentMoniker": "Core\\IRepository\\IRepository.cs",
@@ -571,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "ITableRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\ITableRepository.cs",
               "RelativeDocumentMoniker": "Core\\IRepository\\ITableRepository.cs",
@@ -583,7 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "FoodPackage.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\Models\\FoodPackage.cs",
               "RelativeDocumentMoniker": "Core\\Models\\FoodPackage.cs",
@@ -595,7 +621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Package.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\Models\\Package.cs",
               "RelativeDocumentMoniker": "Core\\Models\\Package.cs",
@@ -607,7 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "TableRequest.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\TableRequest.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\TableRequest.cs",
@@ -619,7 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "OrderItemRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Repository\\OrderItemRepository.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Repository\\OrderItemRepository.cs",
@@ -631,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Repository\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Repository\\EmployeeRepository.cs",
@@ -643,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "IEmployeeRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\IEmployeeRepository.cs",
               "RelativeDocumentMoniker": "Core\\IRepository\\IEmployeeRepository.cs",
@@ -655,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "CUTableRequest.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\CUTableRequest.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\CUTableRequest.cs",
@@ -667,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "GetEmployeeRequest.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\GetEmployeeRequest.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\GetEmployeeRequest.cs",
@@ -679,7 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "CUFoodRequest.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\CUFoodRequest.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\CUFoodRequest.cs",
@@ -691,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "GetEmployeeTableRequest.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\GetEmployeeTableRequest.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\GetEmployeeTableRequest.cs",
@@ -703,7 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "GetStudentResponse.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\GetStudentResponse.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\GetStudentResponse.cs",
@@ -715,7 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "IOrderItemRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\IOrderItemRepository.cs",
               "RelativeDocumentMoniker": "Core\\IRepository\\IOrderItemRepository.cs",
@@ -727,7 +753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "CreateEmployeeTableRequest.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\CreateEmployeeTableRequest.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\CreateEmployeeTableRequest.cs",
@@ -739,7 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "Food.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\Models\\Food.cs",
               "RelativeDocumentMoniker": "Core\\Models\\Food.cs",
@@ -751,7 +777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "IOrderRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\IOrderRepository.cs",
               "RelativeDocumentMoniker": "Core\\IRepository\\IOrderRepository.cs",
@@ -763,7 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "IPackageRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\IPackageRepository.cs",
               "RelativeDocumentMoniker": "Core\\IRepository\\IPackageRepository.cs",
@@ -775,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "PackageRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Repository\\PackageRepository.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Repository\\PackageRepository.cs",
@@ -787,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "IFoodRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\IFoodRepository.cs",
               "RelativeDocumentMoniker": "Core\\IRepository\\IFoodRepository.cs",
@@ -799,7 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "IFoodPackageRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\IRepository\\IFoodPackageRepository.cs",
               "RelativeDocumentMoniker": "Core\\IRepository\\IFoodPackageRepository.cs",
@@ -811,7 +837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "FoodPackageRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Repository\\FoodPackageRepository.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Repository\\FoodPackageRepository.cs",
@@ -823,7 +849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "FoodRequest.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\FoodRequest.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\FoodRequest.cs",
@@ -835,19 +861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "DeleteFoodRequest.cs",
-              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\DeleteFoodRequest.cs",
-              "RelativeDocumentMoniker": "Core\\ViewModels\\DeleteFoodRequest.cs",
-              "ToolTip": "E:\\Web API\\Web Application\\Core\\ViewModels\\DeleteFoodRequest.cs",
-              "RelativeToolTip": "Core\\ViewModels\\DeleteFoodRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T06:12:26.177Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "20240429143124_AddFoodTableToDb.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Migrations\\20240429143124_AddFoodTableToDb.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Migrations\\20240429143124_AddFoodTableToDb.cs",
@@ -859,7 +873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "TableRepository.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\WebApplication1.DataAccess\\Repository\\TableRepository.cs",
               "RelativeDocumentMoniker": "WebApplication1.DataAccess\\Repository\\TableRepository.cs",
@@ -872,18 +886,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 49,
-              "Title": "DeleteEmployeeRequest.cs",
-              "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\DeleteEmployeeRequest.cs",
-              "RelativeDocumentMoniker": "Core\\ViewModels\\DeleteEmployeeRequest.cs",
-              "ToolTip": "E:\\Web API\\Web Application\\Core\\ViewModels\\DeleteEmployeeRequest.cs",
-              "RelativeToolTip": "Core\\ViewModels\\DeleteEmployeeRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T13:26:30.046Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
               "Title": "DeleteTableRequest.cs",
               "DocumentMoniker": "E:\\Web API\\Web Application\\Core\\ViewModels\\DeleteTableRequest.cs",
               "RelativeDocumentMoniker": "Core\\ViewModels\\DeleteTableRequest.cs",
