@@ -7,9 +7,10 @@ namespace Core.ViewModels
         public int Id { get; set; } 
         public int TableId { get; set; } 
         public string OrderNumber { get; set; } 
-        public string Amount { get; set; } 
+        public decimal Amount { get; set; } 
         public string PhoneNumber { get; set; }
-        public List<OrderItem> OrderItems { get; set; }
-       
+
+        public List<OrderItemResource> Items { get; set; }
+
     }
 }

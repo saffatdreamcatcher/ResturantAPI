@@ -66,7 +66,7 @@ namespace WebApplication1.Controllers
         public Task Update(int id, CUFoodRequest request)
         {
 
-            Food food = _unitOfWork.Food.Find(id);
+            Food? food = _unitOfWork.Food.Find(id);
             food.Name = request.Name;
             food.Description = request.Description;
             food.Price = request.Price;

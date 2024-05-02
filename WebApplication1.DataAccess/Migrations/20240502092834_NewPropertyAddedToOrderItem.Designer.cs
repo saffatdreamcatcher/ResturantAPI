@@ -4,6 +4,7 @@ using DatAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240502092834_NewPropertyAddedToOrderItem")]
+    partial class NewPropertyAddedToOrderItem
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -72,7 +75,7 @@ namespace DataAccess.Migrations
                             AmountSold = 0.0,
                             Designation = "Manager",
                             Email = "haris@gmail.com",
-                            JoinDate = new DateTime(2024, 5, 2, 18, 42, 38, 43, DateTimeKind.Local).AddTicks(3938),
+                            JoinDate = new DateTime(2024, 5, 2, 15, 28, 32, 620, DateTimeKind.Local).AddTicks(5523),
                             Name = "Haris",
                             Salary = 3000m,
                             UserId = 4
@@ -224,12 +227,6 @@ namespace DataAccess.Migrations
                     b.Property<decimal>("Amount")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int?>("FoodId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("FoodPackageId")
-                        .HasColumnType("int");
-
                     b.Property<string>("OrderNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -237,17 +234,8 @@ namespace DataAccess.Migrations
                     b.Property<DateTime>("OrderTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<decimal>("Quantity")
-                        .HasColumnType("decimal(18,2)");
-
                     b.Property<int>("TableId")
                         .HasColumnType("int");
-
-                    b.Property<decimal>("TotalPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("UnitPrice")
-                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 

@@ -1,5 +1,6 @@
 ﻿using Core.IRepository;
 using Core.Models;
+using Core.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication1.Controllers
@@ -14,11 +15,31 @@ namespace WebApplication1.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        [HttpGet("Get/{Id}")]
-        public void Get(int Id)
+
+        [HttpPost("Create")]
+        public Task Create(CreateOrderRequest request)
         {
-           List<Order> orders =  _unitOfWork.Order.Get(o=> o.Id == Id);
-           List<OrderItem> orderItems = _unitOfWork.OrderItem.Get(oi=> oi.OrderId == Id);
+
+            Order order = new Order();
+            order.TableId = request.TableId;
+            order.OrderNumber = request.OrderNumber;
+            order.Amount = request.Amount;
+            _unitOfWork.Order.Add(order);
+            _unitOfWork.Save();
+            var orderItems = new List<OrderItem>();
+            foreach (var item in request.Items)
+            {
+                order.FoodId = item.FoodId;
+                order.FoodPackageId = item.FoodPackageId;
+                order.Quantity = item.Quantity;
+                order.UnitPrice = item.UnitPrice;
+                order.TotalPrice = item.TotalPrice;
+            }
+            _unitOfWork.OrderItem.AddRange(orderItems);
+            _unitOfWork.Save();
+            return Task.CompletedTask;
         }
+
+        
     }
 }

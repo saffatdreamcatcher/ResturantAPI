@@ -30,10 +30,10 @@ namespace DataAccess.Repository
             Table = new TableRepository(_db);
             User = new UserRepository(_db);
             Food = new FoodRepository(_db);
+            FoodPackage = new FoodPackageRepository(_db);
+            Package = new PackageRepository(_db);
             Order = new OrderRepository(_db);
             OrderItem = new OrderItemRepository(_db);
-            FoodPackage = new FoodPackageRepository(_db);
-            Package = new PackageRepository(_db); 
 
         }
        
