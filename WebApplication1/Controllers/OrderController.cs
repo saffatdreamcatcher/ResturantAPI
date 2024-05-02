@@ -16,6 +16,22 @@ namespace WebApplication1.Controllers
         }
 
 
+
+        [HttpGet("Get")]
+        public IEnumerable<GetOrderRequest> Get()
+        {
+            List<Order> orders = _unitOfWork.Order.GetAll().ToList();
+            List<GetOrderRequest> orderRequests = orders.Select(o => new GetOrderRequest()
+            {
+                OrderId = o.Id,
+                OrderNumber = o.OrderNumber
+            }).ToList();
+
+            return orderRequests;
+        }
+
+
+
         [HttpPost("Create")]
         public Task Create(CUOrderRequest request)
         {
