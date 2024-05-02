@@ -40,6 +40,30 @@ namespace WebApplication1.Controllers
             return Task.CompletedTask;
         }
 
-        
+        [HttpPut("Update/{id}")]
+        public Task Update(int id, CreateOrderRequest request)
+        {
+
+            Order order = _unitOfWork.Order.Find(id);
+            order.TableId = request.TableId;
+            order.OrderNumber = request.OrderNumber;
+            order.Amount = request.Amount;
+            var orderItems = new List<OrderItem>();
+            foreach (var item in request.Items)
+            {
+                order.FoodId = item.FoodId;
+                order.FoodPackageId = item.FoodPackageId;
+                order.Quantity = item.Quantity;
+                order.UnitPrice = item.UnitPrice;
+                order.TotalPrice = item.TotalPrice;
+            }
+            _unitOfWork.OrderItem.AddRange(orderItems);
+            _unitOfWork.Order.Update(order);
+            _unitOfWork.Save();
+            return Task.CompletedTask;
+        }
+
+
+
     }
 }
