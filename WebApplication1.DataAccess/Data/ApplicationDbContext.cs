@@ -1,5 +1,7 @@
 ﻿using Core.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Net;
+using System;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace DatAccess.Data
@@ -163,6 +165,7 @@ namespace DatAccess.Data
               DiscountType = "holiday season sale"
           }
 );
+
         }
     }
 }
