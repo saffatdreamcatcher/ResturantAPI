@@ -32,6 +32,12 @@ namespace DataAccess.Repository
             return dbSet.Find(Id);
         }
 
+        public T? Find(Guid Id)
+        {
+            return dbSet.Find(Id);
+        }
+
+
         public List<T> Get(Expression<Func<T, bool>> filter)
         {
             IQueryable<T> query = dbSet;

@@ -8,7 +8,7 @@ namespace Core.ViewModels
 {
     public class GetAllEmployee
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string Designation { get; set; }
         public string JoinDate { get; set; }
         public decimal? AmountSold { get; set; }

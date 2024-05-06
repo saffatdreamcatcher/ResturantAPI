@@ -34,7 +34,7 @@ namespace WebApplication1.Controllers
             EmployeeTable? employeeTable = _unitOfWork.EmployeeTable.Find(Id);
             GetEmployeeTableRequest request = new GetEmployeeTableRequest();
             request.Id = Id; 
-            request.EmployeeId = employeeTable.EmployeeId;
+            request.EmployeeId = (Guid) employeeTable.EmployeeId;
             request.TableId = employeeTable.Id; 
             return request;
 

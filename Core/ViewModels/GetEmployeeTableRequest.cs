@@ -11,7 +11,7 @@ namespace Core.ViewModels
     {
         [JsonIgnore]
         public int Id { get; set; }
-        public int EmployeeId { get; set; }
+        public Guid EmployeeId { get; set; }
 
         public int TableId { get; set; }
 

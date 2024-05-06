@@ -311,3 +311,12 @@ E:\Web API\Web Application\WebApplication1\bin\Debug\net8.0\DataAccess.dll
 E:\Web API\Web Application\WebApplication1\bin\Debug\net8.0\Core.pdb
 E:\Web API\Web Application\WebApplication1\bin\Debug\net8.0\DataAccess.pdb
 E:\Web API\Web Application\WebApplication1\obj\Debug\net8.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cs
+E:\Web API\Web Application\WebApplication1\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Web API\Web Application\WebApplication1\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Web API\Web Application\WebApplication1\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Web API\Web Application\WebApplication1\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Web API\Web Application\WebApplication1\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+E:\Web API\Web Application\WebApplication1\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Web API\Web Application\WebApplication1\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\Web API\Web Application\WebApplication1\bin\Debug\net8.0\Castle.Core.dll
+E:\Web API\Web Application\WebApplication1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll

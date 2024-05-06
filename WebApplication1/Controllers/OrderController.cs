@@ -1,7 +1,6 @@
 ﻿using Core.IRepository;
 using Core.Models;
 using Core.ViewModels;
-using DataAccess.Migrations;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication1.Controllers
@@ -22,7 +21,7 @@ namespace WebApplication1.Controllers
         public IEnumerable<GetOrderRequest> Get()
         {
             List<Order> orders = _unitOfWork.Order.GetAll().ToList();
-            List<GetOrderRequest> orderRequests = orders.Select(o => new GetOrderRequest()
+            List<GetOrderRequest> orderRequests = orders.Select(o => new GetOrderRequest() 
             {
                 OrderId = o.Id,
                 OrderNumber = o.OrderNumber

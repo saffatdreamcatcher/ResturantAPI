@@ -14,8 +14,6 @@ namespace WebApplication1.Controllers
         private readonly IUnitOfWork _unitOfWork;
 
 
-        //public int EmployeeId { get; private set; }
-
         public EmployeeController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
@@ -104,8 +102,8 @@ namespace WebApplication1.Controllers
             user.PhoneNumber = request.PhoneNumber;
             user.DobAddrerss = request.DobAddrerss;
             user.Email = request.Email;
-            user.Label = "sssssss";
-            user.UserName = "hhhhhhhh"; 
+            user.Label = "zzz";
+            user.UserName = "employeeuser"; 
 
 
             user.SpouseName = "";
@@ -115,9 +113,9 @@ namespace WebApplication1.Controllers
             employee.JoinDate = request.JoinDate;
             employee.Email = request.Email;
             employee.Designation = request.Designation;
-            employee.Salary = 0;
-            employee.Address = "bleak street";
-            employee.Name = "Rachel";
+            employee.Salary = 5000;
+            employee.Address = "Dhanmondi 9/A";
+            employee.Name = "Emad";
 
             _unitOfWork.Employee.Add(employee);
             _unitOfWork.Save();

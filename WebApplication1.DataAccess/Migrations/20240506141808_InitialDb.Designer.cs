@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240503103151_RemovedMappinginAppDbContext")]
-    partial class RemovedMappinginAppDbContext
+    [Migration("20240506141808_InitialDb")]
+    partial class InitialDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,11 +27,9 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("Core.Models.Employee", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Address")
                         .IsRequired()
@@ -58,8 +56,8 @@ namespace DataAccess.Migrations
                     b.Property<decimal>("Salary")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
@@ -70,27 +68,15 @@ namespace DataAccess.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 1,
+                            Id = new Guid("1e483d73-6cfe-43f1-a317-5a97412228eb"),
                             Address = "Park Street",
                             AmountSold = 0.0,
                             Designation = "Manager",
                             Email = "haris@gmail.com",
-                            JoinDate = new DateTime(2024, 5, 3, 16, 31, 50, 32, DateTimeKind.Local).AddTicks(9236),
+                            JoinDate = new DateTime(2024, 5, 6, 20, 18, 7, 962, DateTimeKind.Local).AddTicks(1375),
                             Name = "Haris",
                             Salary = 3000m,
-                            UserId = 4
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Address = "Dawson Street",
-                            AmountSold = 0.0,
-                            Designation = "Chef",
-                            Email = "emad@gmail.com",
-                            JoinDate = new DateTime(2024, 5, 3, 0, 0, 0, 0, DateTimeKind.Local),
-                            Name = "Emad",
-                            Salary = 5000m,
-                            UserId = 7
+                            UserId = new Guid("16639bb0-4a6e-4e5a-ad05-560d4025d8de")
                         });
                 });
 
@@ -102,8 +88,8 @@ namespace DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("EmployeeId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("EmployeeId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("TableId")
                         .HasColumnType("int");
@@ -120,14 +106,8 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 1,
-                            EmployeeId = 2,
+                            EmployeeId = new Guid("1e483d73-6cfe-43f1-a317-5a97412228eb"),
                             TableId = 1
-                        },
-                        new
-                        {
-                            Id = 2,
-                            EmployeeId = 1,
-                            TableId = 2
                         });
                 });
 
@@ -227,12 +207,6 @@ namespace DataAccess.Migrations
                     b.Property<decimal>("Amount")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int?>("FoodId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("FoodPackageId")
-                        .HasColumnType("int");
-
                     b.Property<string>("OrderNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -240,17 +214,8 @@ namespace DataAccess.Migrations
                     b.Property<DateTime>("OrderTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<decimal>("Quantity")
-                        .HasColumnType("decimal(18,2)");
-
                     b.Property<int>("TableId")
                         .HasColumnType("int");
-
-                    b.Property<decimal>("TotalPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("UnitPrice")
-                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
@@ -316,6 +281,34 @@ namespace DataAccess.Migrations
                     b.ToTable("Packages");
                 });
 
+            modelBuilder.Entity("Core.Models.Role", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
+                });
+
             modelBuilder.Entity("Core.Models.Table", b =>
                 {
                     b.Property<int>("Id")
@@ -358,11 +351,16 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("Core.Models.User", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DobAddrerss")
                         .IsRequired()
@@ -370,7 +368,11 @@ namespace DataAccess.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
 
                     b.Property<string>("ExistingImage")
                         .HasColumnType("nvarchar(max)");
@@ -413,6 +415,12 @@ namespace DataAccess.Migrations
                     b.Property<string>("Linkedin")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
                     b.Property<string>("MiddleName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -424,8 +432,25 @@ namespace DataAccess.Migrations
                     b.Property<int>("NId")
                         .HasColumnType("int");
 
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SpouseName")
@@ -435,65 +460,165 @@ namespace DataAccess.Migrations
                     b.Property<string>("Twitter")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
                     b.Property<string>("UserName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers", (string)null);
 
                     b.HasData(
                         new
                         {
-                            Id = 4,
-                            DobAddrerss = "Dhaka",
-                            Email = "haris@gmail.com",
-                            ExistingImage = "",
-                            Facebook = "fb23",
-                            FatherName = "Idris",
-                            FirstName = "Mohammad",
-                            GenderId = 0,
-                            GenderName = "Male",
-                            Github = "ggg",
-                            Image = "",
-                            Instagram = "Insta23",
-                            Label = "12121",
-                            LastName = "Rauf",
-                            Linkedin = "link23",
-                            MiddleName = "Haris",
-                            MotherName = "Selina",
-                            NId = 22244,
-                            PhoneNumber = "98564545",
-                            SpouseName = "Aysha",
-                            Twitter = "twit23",
-                            UserName = "HarisM"
-                        },
-                        new
-                        {
-                            Id = 7,
+                            Id = new Guid("16639bb0-4a6e-4e5a-ad05-560d4025d8de"),
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "c0546a67-12e3-413e-98d7-2e981f03aa95",
                             DobAddrerss = "Karachi",
-                            Email = "emad@gmail.com",
+                            Email = "admin@mail.com",
+                            EmailConfirmed = false,
                             ExistingImage = "",
                             Facebook = "fb41",
-                            FatherName = "Abbas",
-                            FirstName = "Mohammad",
+                            FatherName = "N/A",
+                            FirstName = "System",
                             GenderId = 0,
                             GenderName = "Male",
                             Github = "gg41",
                             Image = "",
                             Instagram = "Insta41",
-                            Label = "244",
-                            LastName = "Wasim",
+                            Label = "12121",
+                            LastName = "",
                             Linkedin = "link41",
-                            MiddleName = "Emad",
-                            MotherName = "Raisa",
-                            NId = 65234,
-                            PhoneNumber = "567778",
-                            SpouseName = "Mohoua",
+                            LockoutEnabled = false,
+                            MiddleName = "Admin",
+                            MotherName = "N/A",
+                            NId = 645322,
+                            NormalizedEmail = "admin@mail.com",
+                            NormalizedUserName = "admin@mail.com",
+                            PasswordHash = "AQAAAAEAACcQAAAAEFTw0YzFmNSap0Oq8Tb4C2h1Jdvd1fMHL+pKDwaxcY+2Rg/i3jP0cAKJshnm6wy/fQ==",
+                            PhoneNumber = "01779866803",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "KOFABGFNZCSAIOQ7VCPER53GEIMMBIFK",
+                            SpouseName = "N/A",
                             Twitter = "twit41",
-                            UserName = "EmadC"
+                            TwoFactorEnabled = false,
+                            UserName = "admin@mail.com"
                         });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<System.Guid>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<System.Guid>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<System.Guid>", b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<System.Guid>", b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens", (string)null);
                 });
 
             modelBuilder.Entity("Core.Models.Employee", b =>
@@ -577,6 +702,57 @@ namespace DataAccess.Migrations
                     b.Navigation("FoodPackage");
 
                     b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
+                {
+                    b.HasOne("Core.Models.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<System.Guid>", b =>
+                {
+                    b.HasOne("Core.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<System.Guid>", b =>
+                {
+                    b.HasOne("Core.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<System.Guid>", b =>
+                {
+                    b.HasOne("Core.Models.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Core.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<System.Guid>", b =>
+                {
+                    b.HasOne("Core.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Core.Models.Employee", b =>

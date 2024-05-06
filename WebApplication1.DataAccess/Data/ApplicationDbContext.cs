@@ -1,12 +1,10 @@
 ﻿using Core.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Net;
-using System;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace DatAccess.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<User, Role , Guid>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -32,114 +30,82 @@ namespace DatAccess.Data
             modelBuilder.Entity<Employee>().HasData(
                 new Employee
                 {
-                    Id = 1,
+                    Id = new Guid("1e483d73-6cfe-43f1-a317-5a97412228eb"),
                     Name = "Haris",
                     Email = "haris@gmail.com",
                     Address = "Park Street",
                     JoinDate = DateTime.Now,
                     Salary = 3000,
                     Designation = "Manager",
-                    UserId = 4
-
-                },
-
-                new Employee
-                {
-                    Id = 2,
-                    Name = "Emad",
-                    Email = "emad@gmail.com",
-                    Address = "Dawson Street",
-                    JoinDate = DateTime.Today,
-                    Salary = 5000,
-                    Designation = "Chef",
-                    UserId = 7
+                    UserId = new Guid("16639bb0-4a6e-4e5a-ad05-560d4025d8de")
                 }
-    );
+                );
 
             modelBuilder.Entity<Table>().HasData(
-           new Table
-           {
-               Id = 1,
-               TableNumber = "Table01",
-               NumberOfSeats = 4,
-               
-
-           },
-
-           new Table
-           {
-               Id = 2,
-               TableNumber = "Table02",
-               NumberOfSeats = 6,
-           }
-);
+                new Table
+                {
+                    Id = 1,
+                    TableNumber = "Table01",
+                    NumberOfSeats = 4,
+                },
+               new Table
+               {
+                   Id = 2,
+                   TableNumber = "Table02",
+                   NumberOfSeats = 6,
+               });
 
 
             modelBuilder.Entity<EmployeeTable>().HasData(
           new EmployeeTable
           {
               Id = 1,
-              EmployeeId = 2,
+              EmployeeId = new Guid("1e483d73-6cfe-43f1-a317-5a97412228eb"),
               TableId = 1
 
-          },
-
-          new EmployeeTable
-          {
-              Id = 2,
-              EmployeeId = 1,
-              TableId = 2
           }
+
+         
 );
+
             modelBuilder.Entity<User>().HasData(
-            new User
-            {
-                Id = 4,
-                UserName = "HarisM",
-                Email = "haris@gmail.com",
-                PhoneNumber = "98564545",
-                Label = "12121",
-                FirstName = "Mohammad",
-                MiddleName = "Haris",
-                LastName = "Rauf",
-                FatherName = "Idris",
-                MotherName = "Selina",
-                SpouseName = "Aysha",
-                DobAddrerss = "Dhaka",
-                NId = 22244,
-                Image = "",
-                ExistingImage = "",
-                Facebook = "fb23",
-                Linkedin = "link23",
-                Twitter = "twit23",
-                Instagram = "Insta23",
-                Github = "ggg",
-                GenderName = "Male",
-            },
-               new User
-               {
-                   Id = 7,
-                   UserName = "EmadC",
-                   Email = "emad@gmail.com",
-                   PhoneNumber = "567778",
-                   Label = "244",
-                   FirstName = "Mohammad",
-                   MiddleName = "Emad",
-                   LastName = "Wasim",
-                   FatherName = "Abbas",
-                   MotherName = "Raisa",
-                   SpouseName = "Mohoua",
-                   DobAddrerss = "Karachi",
-                   NId = 65234,
-                   Image = "",
-                   ExistingImage = "",
-                   Facebook = "fb41",
-                   Linkedin = "link41",
-                   Twitter = "twit41",
-                   Instagram = "Insta41",
-                   Github = "gg41",
-                   GenderName = "Male",
-               }
+
+                new User()
+                {
+                    Id = new Guid("16639bb0-4a6e-4e5a-ad05-560d4025d8de"),
+                    FirstName = "System",
+                    MiddleName = "Admin",
+                    LastName = "",
+                    FatherName = "N/A",
+                    MotherName = "N/A",
+                    SpouseName = "N/A",
+                    Label = "12121",
+                    NId = 645322,
+                    DobAddrerss = "Karachi",
+                    Image = "",
+                    ExistingImage = "",
+                    Facebook = "fb41",
+                    Linkedin = "link41",
+                    Twitter = "twit41",
+                    Instagram = "Insta41",
+                    Github = "gg41",
+                    GenderName = "Male",
+                    UserName = "admin@mail.com",
+                    NormalizedUserName = "admin@mail.com",
+                    Email = "admin@mail.com",
+                    NormalizedEmail = "admin@mail.com",
+                    EmailConfirmed = false,
+                    PasswordHash = "AQAAAAEAACcQAAAAEFTw0YzFmNSap0Oq8Tb4C2h1Jdvd1fMHL+pKDwaxcY+2Rg/i3jP0cAKJshnm6wy/fQ==",
+                    SecurityStamp = "KOFABGFNZCSAIOQ7VCPER53GEIMMBIFK",
+                    ConcurrencyStamp = "c0546a67-12e3-413e-98d7-2e981f03aa95",
+                    PhoneNumber = "01779866803",
+                    PhoneNumberConfirmed = false,
+                    TwoFactorEnabled = false,
+                    LockoutEnabled = false,
+                    AccessFailedCount = 0,
+
+
+                }
             );
             modelBuilder.Entity<Food>().HasData(
           new Food
